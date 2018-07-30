@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/e2/rb-inotify.git
+  revision: be4cf88b4dab0bb3a899b16a0df8a6fcf1502e16
+  branch: misc_bugfixes
+  specs:
+    rb-inotify (0.9.7)
+      ffi (>= 0.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -126,8 +134,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (12.3.1)
     rb-fsevent (0.10.3)
-    rb-inotify (0.9.10)
-      ffi (>= 0.5.0, < 2)
     rspec-core (3.7.1)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
@@ -205,6 +211,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.0)
   rails-controller-testing
+  rb-inotify!
   rspec-rails
   sass-rails (~> 5.0)
   spring
