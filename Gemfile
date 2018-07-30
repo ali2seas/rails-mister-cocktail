@@ -59,3 +59,7 @@ gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 
 gem 'rb-inotify', github: 'e2/rb-inotify', branch: 'misc_bugfixes'
+gem 'autoprefixer-rails'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'font-awesome-sass', '~> 5.0.9'
+gem 'simple_form'
