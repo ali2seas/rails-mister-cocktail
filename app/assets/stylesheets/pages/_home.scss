@@ -1,0 +1,8 @@
+// Specific CSS for your home-page
+.background {
+  background-image: asset-url('background.jpeg');
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display:flex;
+}

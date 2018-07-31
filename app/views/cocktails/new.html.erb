@@ -1,6 +1,11 @@
-<h1>Add a new cocktails</h1>
-
-<%= form_for [@cocktail] do |f| %>
-  <%= f.text_field :name %>
-  <%= f.submit "add a cocktail", class: "btn btn-primary" %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+    <h1>Add a new cocktails</h1>
+    <%= form_for [@cocktail] do |f| %>
+      <%= f.text_field :name, class: "form-control" %>
+      <%= f.submit "add a cocktail", class: "btn btn-primary form-control" %>
+    <% end %>
+    </div>
+  </div>
+</div>

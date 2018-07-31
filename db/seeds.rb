@@ -8,14 +8,23 @@
 # Ingredient.create(name: "lemon")
 # Ingredient.create(name: "ice")
 # Ingredient.create(name: "mint leaves")
-
+Cocktail.destroy_all
 Ingredient.destroy_all
 require 'json'
 require 'open-uri'
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
+cocktails_url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic'
+
 all = open(url).read
 @ingredients = JSON.parse(all)
 @ingredients["drinks"].each do |ingredient|
   Ingredient.create(name: ingredient["strIngredient1"])
+end
+
+
+all_cocktails = open(cocktails_url).read
+cocktialsss = JSON.parse(all_cocktails)
+cocktialsss["drinks"].each do |cocktail|
+  Cocktail.create(name: cocktail["strDrink"], url: cocktail["strDrinkThumb"])
 end
